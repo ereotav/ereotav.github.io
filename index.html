@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eric Startpage</title>
+
+    <style>
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+html {
+    align-items: center;
+    color: #acacac;
+    display: flex;
+    font: 16px monospace;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    margin: 1em;
+    padding: 1em;
+    background-color: #181818;
+}
+
+h1 {
+    font-size: 2em;
+    grid-column: 1 / -1;
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #5c3995;
+}
+
+nav {
+    display: grid;
+    grid-row-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 1em;
+    min-width: 24em;
+    padding: 1em 0;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;            
+}
+
+li:first-child {
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+form {
+        margin: 1em;
+        position: relative;
+}
+
+form input[type="search"] {
+        background-color: inherit;
+        border: none;
+        box-sizing: border-box;
+        font: inherit;
+        font-size: 20px;
+        color: inherit; 
+        width: 100%;  
+        outline: none;
+}
+
+form label {
+        color: inherit;
+        left: -1em;
+        position: absolute;        
+}
+
+form:focus-within input::placeholder {
+    opacity: 0;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+    <h1> 
+        <form action="https://duckduckgo.com/" method="GET">
+            <label for="q">></label>
+            <input autofocus
+                    id="q"       
+                    name="q"
+                    type="search"                    
+                    placeholder="...">                   
+        </form>
+    </h1>
+        
+        <ul>
+        <li>General</li>
+    <li><a href="https://www.gmail.com">Gmail</a></li>
+    <li><a href="https://www.wunderground.com/weather/us/ma/westborough/KMAWESTB21">Weather</a></li>
+    <li><a href="https://www.reddit.com">Reddit</a></li>
+    <li><a href="http://legowelt.org">Legowelt</a></li>
+        </ul>
+
+    
+        <ul>
+            <li>Watch</li>
+            <li><a href="https://www.youtube.com">Youtube</a></li>
+            <li><a href="https://www12.9anime.to/home">9anime</a></li>
+            <li><a href="https://www.twitch.tv">Twitch</a></li>
+            <li><a href="https://www.pbs.org">PBS</a></li>
+        </ul>
+        
+        
+        <ul>
+            <li>Audio</li>
+            <li><a href="https://www.attackmagazine.com">Attack</a></li>
+            <li><a href="https://bandcamp.com">Bandcamp</a></li>
+            <li><a href="https://subsekt.com">Subsekt</a></li>
+            <li><a href="https://soundcloud.com">Soundcloud</a></li>
+            <li><a href="https://di.fm">Di.fm</a></li>
+        </ul>
+        
+
+
+        <ul>
+        <li>Bike</li>
+    <li><a href="https://www.pinkbike.com">Pinkbike</a></li>
+    <li><a href="https://nsmb.com">NSMB</a></li>
+    <li><a href="https://www.vitalmtb.com">Vital</a></li>
+        </ul>
+        
+        <ul>
+            <li>Crypto</li>
+        <li><a href="https://www.binance.us">Binance.us</a></li>        
+        <li><a href="https://www.coinbase.com">Coinbase</a><a href="https://pro.coinbase.com/"> / Pro</a></li>
+        <li><a href="https://cryptonews.com">Cryptonews</a></li>
+        <li><a href="https://www.coindesk.com">Coindesk</a></li>
+        <li><a href="https://www.coinbureau.com">Coin Bureau</a></li>
+        <li><a href="https://coinmarketcap.com">Coin Marketcap</a></li>
+        </ul>
+
+
+    </nav>
+  </body>
+</html>
